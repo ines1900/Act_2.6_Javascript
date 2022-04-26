@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testjavascript</title>
+    <style>
+      #text {
+      text-align: center;
+      line-height: 500px;
+      color: WHITE;
+      mix-blend-mode: difference;
+      }
+    </style>
+    <script>
+      var x = false;
+      function changecolors(){
+      var color=(x)?"black":"white"; //If X == true, then set to black, if false then white
+      document.body.style.background = color; //Set color
+      x=!x; //Invert X
+      }
+    </script>
+    </head>
+
+   <body onload="setInterval(changecolors,5000)">
+   <div id="text">
+       <h1>JOURNUIT</h1>
+   </div>
+  </body>
+
+</html>
